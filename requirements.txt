@@ -1,0 +1,6 @@
+fastapi==0.135.1
+uvicorn==0.42.0
+fastai==2.8.7
+torch==2.10.0
+pydantic==2.12.5
+huggingface_hub>=0.20.0
