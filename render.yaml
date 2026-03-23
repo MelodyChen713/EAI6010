@@ -3,7 +3,7 @@ services:
     name: ag-news-classifier
     runtime: docker
     plan: free
-    healthCheckPath: /
+    healthCheckPath: /health
     envVars:
       - key: MODEL_PATH
         value: models/ag_news_classifier.pkl
