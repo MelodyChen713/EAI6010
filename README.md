@@ -1,3 +1,12 @@
+---
+title: AG News Classifier
+emoji: 📰
+colorFrom: blue
+colorTo: green
+sdk: docker
+pinned: false
+---
+
 # EAI6010 Module 5：ULMFiT 文本分类微服务
 
 ## 项目概述
