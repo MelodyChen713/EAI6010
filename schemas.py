@@ -6,7 +6,7 @@ class PredictRequest(BaseModel):
         ...,
         min_length=1,
         max_length=5000,
-        description="待分类的新闻文本",
+        description="News text to classify",
         json_schema_extra={
             "examples": [
                 "NASA launches new Mars exploration mission with advanced rover technology"
@@ -16,9 +16,9 @@ class PredictRequest(BaseModel):
 
 
 class PredictResponse(BaseModel):
-    prediction: str = Field(description="预测的新闻类别")
-    confidence: float = Field(description="预测置信度（最高概率）")
-    label_index: int = Field(description="预测类别的索引")
+    prediction: str = Field(description="Predicted news category")
+    confidence: float = Field(description="Prediction confidence (highest probability)")
+    label_index: int = Field(description="Index of the predicted category")
     probabilities: dict[str, float] = Field(
-        description="各类别的概率分布"
+        description="Probability distribution across all categories"
     )
